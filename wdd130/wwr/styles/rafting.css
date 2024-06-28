@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --heading-font: 'Open Sans', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+}
+
+header img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+article {
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #000;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root {
+  --primary-color: steelblue;
+  --secondary-color: #333;
+  --background-color: #f9f9f9;
+  --text-color: black;
+}
+
+body {
+  font-family: 'Acme', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+
+header {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 120px 1fr 2fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  max-width: 1000px;
+}
+
+header img {
+  margin: 0 0.25rem 0 1rem;
+  width: 64px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav {
+  text-align: right;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  flex: 1 1 100%;
+}
+
+.navigation a {
+  display: block;
+  color: var(--text-color);
+  padding: 20px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: tomato;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+article img {
+  margin-right: 20px;
+  width: 200px;
+  height: auto;
+}
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+section figure {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+}
+
+section figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  background-color: var(--background-color);
+}
+
+footer img {
+  width: 32px;
+  height: auto;
+  margin: 0 10px;
+}
+
+footer a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.team figure {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: darkblue;
+}

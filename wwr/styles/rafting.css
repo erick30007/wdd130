@@ -192,3 +192,38 @@ form button {
 form button:hover {
   background-color: darkblue;
 }
+.trip {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+}
+
+.trip h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
